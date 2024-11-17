@@ -1,0 +1,25 @@
+# Reload functions
+super + Escape
+	"$XDG_CONFIG_HOME"/sxhkd/functions
+alt + Up
+  alacritty
+
+
+ctrl + shift + Up
+  doas light -A 10
+ctrl + shift + Down
+  doas light -U 10
+
+ctrl + shift + Right
+  pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+ctrl + shift + Left
+  pactl set-sink-volume @DEFAULT_SINK@ -10%
+
+
+ctrl + shift + w
+  python ~/.change_wall.py 
+
+
+ctrl + shift + a 
+  maim -u -s ~/Downloads/screens/picture.png

@@ -1,0 +1,13 @@
+rm -r ~/.fonts &
+xrandr --output eDP1 --auto --left-of HDMI1  &
+setxkbmap -layout  us,ara  &
+setxkbmap -option  grp:alt_shift_toggle &
+setxkbmap -option  caps:escape &
+picom -b  &
+xset -dpms  &
+xset s 0 0 &
+python ~/.config/startup/wallp.py &
+python ~/.config/startup/start-apps.py &
+sxhkd  &
+slstatus  &
+dwm

@@ -1,0 +1,3 @@
+package fzf
+theme bobthefish
+theme default
